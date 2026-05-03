@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotics Learning Platform</title>
+  <meta name="description" content="Modern robotics education website for school students." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-strip">
+      <div class="container top-strip-wrap">
+        <a class="top-email" href="mailto:ppramod333@gmail.com">
+          <span data-i18n="email_label">Email:</span> ppramod333@gmail.com
+        </a>
+
+        <div class="language-box">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <label for="languageSelect" data-i18n="lang_label">Language</label>
+          <select id="languageSelect" aria-label="Language selector">
+            <option value="en" data-i18n="lang_option_en">English</option>
+            <option value="hi" data-i18n="lang_option_hi">Hindi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="container nav-wrap">
+      <a href="#" class="brand" data-page="home">
+        <span class="brand-icon">⚙</span>
+        <span class="brand-title" data-i18n="brand_title">Robotics for Students</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home" data-page="home" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#about" data-page="about" class="nav-link" data-i18n="nav_about">About</a>
+        <a href="#modules" data-page="modules" class="nav-link" data-i18n="nav_modules">Project Modules</a>
+        <a href="#innovation" data-page="innovation" class="nav-link" data-i18n="nav_innovation">New Innovation</a>
+        <a href="#resources" data-page="resources" class="nav-link" data-i18n="nav_resources">Resources</a>
+        <a href="#notices" data-page="notices" class="nav-link" data-i18n="nav_notices">Notices</a>
+        <a href="#contact" data-page="contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <section class="home-image-banner" aria-label="Home banner slideshow">
+        <div class="container">
+          <div class="home-banner-slider" id="homeBannerSlider">
+            <img src="assets/banners/banner1.svg" alt="Robotics Learning Platform banner" class="home-banner-slide active" />
+            <img src="assets/banners/banner2.svg" alt="Hands-on Lab Projects banner" class="home-banner-slide" />
+            <img src="assets/banners/banner3.svg" alt="Innovation Challenge banner" class="home-banner-slide" />
+            <img src="assets/banners/banner4.svg" alt="Weekly Live Sessions banner" class="home-banner-slide" />
+            <img src="assets/banners/banner5.svg" alt="Future Tech Starts Here banner" class="home-banner-slide" />
+          </div>
+        </div>
+      </section>
+
+      <div class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="tag" data-i18n="home_tag">Welcome Future Engineers</p>
+            <h1 data-i18n="home_title">Robotics Learning Platform</h1>
+            <p class="lead" data-i18n="home_intro">
+              Learn robotics step by step with practical activities, exciting projects, and innovation challenges designed for school students.
+            </p>
+            <a href="#modules" data-page="modules" class="btn" data-i18n="home_cta">Explore Project Modules</a>
+          </div>
+          <div class="hero-card">
+            <h3 data-i18n="home_why_title">Why Robotics?</h3>
+            <ul>
+              <li data-i18n="home_why_1">Build creativity and problem-solving skills</li>
+              <li data-i18n="home_why_2">Understand coding, electronics, and AI basics</li>
+              <li data-i18n="home_why_3">Prepare for future careers in technology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section-gap">
+        <h2 data-i18n="home_featured_title">Featured Projects</h2>
+        <div class="card-grid three">
+          <article class="card">
+            <h3 data-i18n="feat_1_title">Line Follower Robot</h3>
+            <p data-i18n="feat_1_desc">Use IR sensors and a basic motor driver to create a smart robot that follows a track.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="feat_2_title">Obstacle Avoiding Bot</h3>
+            <p data-i18n="feat_2_desc">Learn distance sensing using ultrasonic modules and automate movement decisions.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="feat_3_title">Voice-Controlled Rover</h3>
+            <p data-i18n="feat_3_desc">Combine Bluetooth communication with mobile commands for hands-free robot control.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <div class="container section-gap">
+        <h2 data-i18n="about_title">About the Platform</h2>
+        <p data-i18n="about_intro">
+          This platform helps students learn robotics through guided lessons, hands-on projects, and innovation-focused activities.
+          It is designed to make technology education simple, practical, and fun.
+        </p>
+
+        <div class="card-grid two">
+          <article class="card">
+            <h3 data-i18n="teacher_profile_title">Teacher Profile</h3>
+            <p data-i18n-html="teacher_name_html"><strong>Name:</strong> Pramod Kumar</p>
+            <p data-i18n-html="teacher_role_html"><strong>Role:</strong> Robotics Educator</p>
+            <p data-i18n="teacher_desc">
+              Passionate about STEM education and mentoring students to build real-world robotics projects.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="mission_vision_title">Mission &amp; Vision</h3>
+            <p data-i18n-html="mission_html"><strong>Mission:</strong> Make robotics education accessible to every school student.</p>
+            <p data-i18n-html="vision_html"><strong>Vision:</strong> Build a generation of creative innovators and responsible technologists.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="modules" class="page">
+      <div class="container section-gap">
+        <h2 data-i18n="modules_title">Project Modules</h2>
+
+        <h3 class="module-title" data-i18n="modules_beginner">Beginner</h3>
+        <div class="card-grid three">
+          <article class="card"><h4 data-i18n="mod_b_1_title">LED Blinking Circuit</h4><p data-i18n="mod_b_1_desc">Basic electronics and Arduino setup.</p></article>
+          <article class="card"><h4 data-i18n="mod_b_2_title">Mini Traffic Light</h4><p data-i18n="mod_b_2_desc">Understand timing and digital outputs.</p></article>
+          <article class="card"><h4 data-i18n="mod_b_3_title">Servo Sweep Demo</h4><p data-i18n="mod_b_3_desc">Control motion with simple code logic.</p></article>
+        </div>
+
+        <h3 class="module-title" data-i18n="modules_intermediate">Intermediate</h3>
+        <div class="card-grid three">
+          <article class="card"><h4 data-i18n="mod_i_1_title">Line Follower</h4><p data-i18n="mod_i_1_desc">Sensor calibration and motor control basics.</p></article>
+          <article class="card"><h4 data-i18n="mod_i_2_title">Bluetooth Car</h4><p data-i18n="mod_i_2_desc">Mobile-app control and wireless communication.</p></article>
+          <article class="card"><h4 data-i18n="mod_i_3_title">Smart Dustbin</h4><p data-i18n="mod_i_3_desc">Auto-open mechanism using ultrasonic sensors.</p></article>
+        </div>
+
+        <h3 class="module-title" data-i18n="modules_advanced">Advanced</h3>
+        <div class="card-grid three">
+          <article class="card"><h4 data-i18n="mod_a_1_title">Gesture Robot</h4><p data-i18n="mod_a_1_desc">Use accelerometer input to control movement.</p></article>
+          <article class="card"><h4 data-i18n="mod_a_2_title">Vision Bot (Concept)</h4><p data-i18n="mod_a_2_desc">Introduce camera-based object detection idea.</p></article>
+          <article class="card"><h4 data-i18n="mod_a_3_title">IoT Surveillance Bot</h4><p data-i18n="mod_a_3_desc">Monitor and control robot over the internet.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="innovation" class="page">
+      <div class="container section-gap">
+        <h2 data-i18n="innovation_title">New Innovation</h2>
+        <div class="card-grid three">
+          <article class="card">
+            <h3 data-i18n="innov_1_title">Solar Campus Cleaner</h3>
+            <p data-i18n="innov_1_desc">A solar-powered robot concept built by students to collect dry leaves from school gardens.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="innov_2_title">Smart Attendance Bot</h3>
+            <p data-i18n="innov_2_desc">Prototype using QR scanning and voice output for morning attendance support.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="innov_3_title">Flood Alert Rover</h3>
+            <p data-i18n="innov_3_desc">Low-cost rover model that checks water level and sends warning messages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="page">
+      <div class="container section-gap">
+        <h2 data-i18n="resources_title">Resources</h2>
+        <div class="card">
+          <ul class="resource-list">
+            <li data-i18n-html="res_1_html"><strong>PDF:</strong> Introduction to Arduino and Sensors</li>
+            <li data-i18n-html="res_2_html"><strong>PDF:</strong> Beginner Robotics Circuit Handbook</li>
+            <li data-i18n-html="res_3_html"><strong>Video:</strong> Robotics Basics for School Students</li>
+            <li data-i18n-html="res_4_html"><strong>Video:</strong> Building Your First Robot Car</li>
+            <li data-i18n-html="res_5_html"><strong>Link:</strong> <a href="https://www.arduino.cc/en/Guide" target="_blank" rel="noopener">Arduino Official Guide</a></li>
+            <li data-i18n-html="res_6_html"><strong>Link:</strong> <a href="https://www.tinkercad.com/" target="_blank" rel="noopener">Tinkercad Simulator</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="notices" class="page">
+      <div class="container section-gap">
+        <h2 data-i18n="notices_title">Notices</h2>
+        <ul class="notice-list">
+          <li data-i18n="notice_1">Workshop on Robot Assembly: 10 June 2026</li>
+          <li data-i18n="notice_2">Last date for Innovation Project Submission: 18 June 2026</li>
+          <li data-i18n="notice_3">Inter-School Robotics Challenge Registration Open</li>
+          <li data-i18n="notice_4">New module videos uploaded in Resources section</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="page">
+      <div class="container section-gap">
+        <h2 data-i18n="contact_title">Contact</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" data-i18n="label_name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required data-i18n-placeholder="ph_name" />
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="label_email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required data-i18n-placeholder="ph_email" />
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="label_message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message" required data-i18n-placeholder="ph_message"></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button type="submit" class="btn" data-i18n="send_btn">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="admin-concept card">
+          <h3 data-i18n="admin_title">Simple Admin Panel Concept (Optional)</h3>
+          <p data-i18n="admin_desc">
+            Admin can review submitted contact messages, update notices, and add new resources from a dashboard in a future version.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer_copy">© 2026 Pramod Kumar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

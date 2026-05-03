@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e4c8a"/>
+      <stop offset="100%" stop-color="#1ba7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="420" fill="url(#g3)"/>
+  <path d="M0 310 C260 220 420 380 700 300 C980 220 1150 340 1400 250 L1400 420 L0 420 Z" fill="#ffffff22"/>
+  <text x="86" y="180" fill="white" font-size="52" font-family="Poppins, Arial" font-weight="700">Innovation Challenge 2026</text>
+  <text x="86" y="240" fill="#e6f5ff" font-size="30" font-family="Poppins, Arial">Show your student robotics ideas</text>
+</svg>

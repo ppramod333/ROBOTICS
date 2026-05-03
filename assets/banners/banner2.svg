@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a2f54"/>
+      <stop offset="100%" stop-color="#0a66c2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="420" fill="url(#g2)"/>
+  <rect x="70" y="70" width="340" height="260" rx="18" fill="#ffffff20"/>
+  <text x="520" y="170" fill="white" font-size="52" font-family="Poppins, Arial" font-weight="700">Hands-on Lab Projects</text>
+  <text x="520" y="228" fill="#d5ecff" font-size="30" font-family="Poppins, Arial">From beginner circuits to smart robots</text>
+</svg>
